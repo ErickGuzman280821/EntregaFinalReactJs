@@ -1,0 +1,13 @@
+.cart-icon{
+    font-size: 30px;
+    color: white;
+}
+
+.cart-container{
+    display: flex;
+}
+
+.cartwidget-number{
+    font-size: 20px;
+    color: white;
+}

@@ -1,0 +1,11 @@
+.greetings-container{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(48, 48, 48);
+    padding: 13px;
+}
+
+h2{
+    font-size: 25px;
+    color: white;
+}
