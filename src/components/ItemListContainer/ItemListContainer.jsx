@@ -1,11 +1,19 @@
-import React from 'react'
-import "./ItemListContainer.css"
+import React, {useState, useEffect} from 'react'
+import ItemListMap from '../ItemListMap';
+import fetchApi from '../../hooks/fetchApi';
+import { Container, Row } from 'react-bootstrap';
 
-const ItemListContainer = ({greetings}) => {
+
+const ItemListContainer = () => {
+
+  const [items] = fetchApi('https://fakestoreapi.com/products');
+
   return (
-    <div className='greetings-container'>
-        <h2>{greetings}</h2>
-    </div>
+    <Container>
+        <Row>
+              {items !== null && <ItemListMap items={items}/>}
+        </Row>
+    </Container>
   )
 }
 

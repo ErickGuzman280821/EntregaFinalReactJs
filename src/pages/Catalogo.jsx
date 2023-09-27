@@ -1,10 +1,11 @@
 import React from 'react'
-import Tarjetas from '../components/ItemListContainer/Tarjetas'
+import ItemListContainer from '../components/itemListContainer/itemListContainer'
+
 
 const Catalogo = () => {
   return (
     <div>
-        <Tarjetas />
+        <ItemListContainer />
     </div>
   )
 }
