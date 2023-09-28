@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
 
-const fetchApi = (url) => {
-    const [data, setData] = useState(null)
-
+const useFetchApi = (url) => {
+    const [data, setData] = useState(null);
+    console.log(data)
     const getData = () => {
         fetch(url)
-            .then((response) => response.json())
+            .then((res) => res.json())
             .then((data) => setData(data))
             .catch((error) => console.log(error))
     }
@@ -13,6 +13,7 @@ const fetchApi = (url) => {
         getData()
     },[])
     return [data]
+
 }
 
-export default fetchApi
+export default useFetchApi

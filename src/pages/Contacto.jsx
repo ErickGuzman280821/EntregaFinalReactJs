@@ -2,7 +2,7 @@ import React from 'react'
 
 const Ofertas = () => {
   return (
-    <div>Ofertas</div>
+    <div>Contacto</div>
   )
 }
 

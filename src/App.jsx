@@ -2,9 +2,8 @@ import './App.css'
 import { NavBar } from './components/NavBar/NavBar'
 import { Route, Routes } from 'react-router'
 import Inicio from './pages/Inicio'
-import Ofertas from './pages/Ofertas'
-import Catalogo from './pages/Catalogo'
-import ItemListContainer from './components/itemListContainer/itemListContainer'
+import Contacto from './pages/Contacto'
+import Categorias from './pages/Categorias'
 
 const App = () => {
 
@@ -13,13 +12,11 @@ const App = () => {
       <NavBar />
       <Routes>
         <Route path='/' element={<Inicio />}/>
-        <Route path='/catalogo' element={<Catalogo />}/>
-        <Route path='/ofertas' element={<Ofertas />}/>
+        <Route path='/categorias' element={<Categorias />}/>
+        <Route path='/contacto' element={<Contacto />}/>
       </Routes>
 
-      <ItemListContainer />
     </>
-
     
   )
 }

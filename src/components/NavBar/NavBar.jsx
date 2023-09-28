@@ -16,10 +16,10 @@ export const NavBar = () => {
                 <Link className="nav-link" to="/">Inicio<span className="sr-only">(current)</span></Link>
                             </li>
                             <li className="nav-item">
-                <Link className="nav-link" to="/catalogo">Catalogo</Link>
+                <Link className="nav-link" to="/categorias">Categorias</Link>
                             </li>
                         <li className="nav-item">
-                <Link className="nav-link" to="/ofertas">Ofertas</Link>
+                <Link className="nav-link" to="/contacto">Contacto</Link>
                         </li>
                         </ul>
             <span className="navbar-icon"><CartWidget/></span>
