@@ -11,7 +11,7 @@ const useFetchApi = (url) => {
     }
     useEffect(() => {
         getData()
-    },[])
+    },[url])
     return [data]
 
 }

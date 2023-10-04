@@ -16,7 +16,16 @@ export const NavBar = () => {
                 <Link className="nav-link" to="/">Inicio<span className="sr-only">(current)</span></Link>
                             </li>
                             <li className="nav-item">
-                <Link className="nav-link" to="/categorias">Categorias</Link>
+                <Link className="nav-link" to="/category/jewelery">Joyeria</Link>
+                            </li>
+                            <li className="nav-item">
+                <Link className="nav-link" to="/category/electronics">Electronicos</Link>
+                            </li>
+                            <li className="nav-item">
+                <Link className="nav-link" to="/category/women's clothing">Ropa de mujer</Link>
+                            </li>
+                            <li className="nav-item">
+                <Link className="nav-link" to="/category/men's clothing">Ropa de hombre</Link>
                             </li>
                         <li className="nav-item">
                 <Link className="nav-link" to="/contacto">Contacto</Link>

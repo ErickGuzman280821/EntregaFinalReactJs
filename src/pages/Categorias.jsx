@@ -1,12 +1,14 @@
 import React from 'react'
+import ItemListContainer from '../components/ItemListContainer/ItemListContainer'
 
-
-const Categoria = () => {
+const Categorias = () => {
+ 
   return (
-      <div>
-          Categorias
-      </div>
+    <div>
+
+      <ItemListContainer />
+    </div>
   )
 }
 
-export default Categoria
+export default Categorias
