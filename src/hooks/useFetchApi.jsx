@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 
 const useFetchApi = (url) => {
     const [data, setData] = useState(null);
-    console.log(data)
     const getData = () => {
         fetch(url)
             .then((res) => res.json())

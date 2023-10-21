@@ -9,7 +9,7 @@ import { useParams } from 'react-router-dom';
 const ItemListContainer = () => {
   const category = useParams().categoryId
 
-  const [items] = useFetchApi(category ? `https://fakestoreapi.com/products/category/${category}` : 'https://fakestoreapi.com/products')
+  const [items] = useFetchApi(category ? `https://fakestoreapi.com/products/category/${category}`: 'https://fakestoreapi.com/products')
 
   return (
     <Container>

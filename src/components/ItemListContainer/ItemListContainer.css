@@ -9,3 +9,18 @@ h2{
     font-size: 25px;
     color: white;
 }
+
+.item-count{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.Agregar-al-carrito{
+    margin: 20px;
+}
+
+.button-count{
+    padding: 30px;
+}
+
