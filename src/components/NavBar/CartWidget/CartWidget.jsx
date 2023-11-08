@@ -1,16 +1,18 @@
-import React from 'react'
-import { PiShoppingCartBold } from "react-icons/pi"
-import "./CartWidget.css"
+import React, { useContext } from 'react'
+import { Link } from 'react-router-dom'
+import { CartContext } from '../../../context/CartContext'
 
 const CartWidget = () => {
-  return (
-    <div className='cart-container'>
-        <PiShoppingCartBold className='cart-icon'/>
-        <div className="cartwidget-number">
-            0
-        </div>
-    </div>
 
+  const { numeroDelCarrito } = useContext(CartContext)
+
+  return (
+    <div>
+      <Link className="nav-link" to="/carrito">
+        Carrito
+        <span className='numero-de-carrito'> {numeroDelCarrito()} </span>
+      </Link>
+    </div>
   )
 }
 

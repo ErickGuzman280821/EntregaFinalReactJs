@@ -27,12 +27,14 @@ export const NavBar = () => {
                             <li className="nav-item">
                 <Link className="nav-link" to="/category/men's clothing">Ropa de hombre</Link>
                             </li>
-                        <li className="nav-item">
+                            <li className="nav-item">
                 <Link className="nav-link" to="/contacto">Contacto</Link>
-                        </li>
-                        </ul>
-            <span className="navbar-icon"><CartWidget/></span>
-            
+                            </li>
+                            <li>
+                <CartWidget />
+                            </li>
+                            </ul>
+
     </div>
   </nav></div>
   )

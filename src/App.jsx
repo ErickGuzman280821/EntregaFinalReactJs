@@ -5,27 +5,24 @@ import Inicio from './pages/Inicio'
 import Contacto from './pages/Contacto'
 import Categorias from './pages/Categorias'
 import VerDetalles from './pages/VerDetalles'
-import { useState } from 'react'
-import { CartContext } from './context/CartContext'
+import { CartProvider } from './context/CartContext'
+import Carrito from './components/Carrito'
 
 function App () {
-
-  const [carrito, setCarrito] = useState([]);
 
   return (
     <div>
       <NavBar />
-      <CartContext.Provider value={ {carrito, setCarrito} }>
+      <CartProvider>
       <Routes>
         <Route path='/' element={<Inicio />}/>
         <Route path='/category/:categoryId' element={<Categorias />}/>
         <Route path='/contacto' element={<Contacto />}/>
         <Route path="/detalle/:id" element={<VerDetalles />}/>
+        <Route path="/carrito" element={<Carrito />}/>
       </Routes>
-      </CartContext.Provider>
-
+      </CartProvider>
     </div>
-    
   )
 }
 
